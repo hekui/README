@@ -322,12 +322,8 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 	- [x] 选中
 	- [ ] 未选中
 
-- [x] 需求分析
-- [x] 系统设计
-- [x] 详细设计
-- [ ] 编码
-- [ ] 测试
-- [ ] 交付
+- [x] 选中
+- [ ] 未选中
 
 您可以使用这个功能来标注某个项目各项任务的完成情况。
 > Tip:
