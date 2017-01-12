@@ -1,13 +1,6 @@
-README
-===========================
+# README
+
 该文件用来测试和展示书写README的各种markdown语法。GitHub的markdown语法在标准的markdown语法基础上做了扩充，称之为`GitHub Flavored Markdown`。简称`GFM`，GFM在GitHub上有广泛应用，除了README文件外，issues和wiki均支持markdown语法。
-
-****
-###　　　　　　　　　　　　Author:果冻虾仁
-###　　　　　　　　　 E-mail:Jelly.K.Wang@qq.com
-
-===========================
-
 
 
 ##目录
@@ -25,7 +18,7 @@ README
 * [图片](#图片)
     * 来源于网络的图片
     * GitHub仓库中的图片
-* [链接](#链接) 
+* [链接](#链接)
     * 文字超链接
         *  链接外部URL
         *  链接本仓库里的URL
@@ -37,73 +30,155 @@ README
     * 复选框列表
 * [块引用](#块引用)
 * [代码高亮](#代码高亮)
-* [表格](#表格) 
+* [表格](#表格)
 * [表情](#表情)
 
-横线
------------
-***、---、___可以显示横线效果
+## 横线
 
+默认的一级、二级标题下面自带横线，
+```html
+# 一级标题
+# 二级标题
+```
+还可使用 `***` 、 `---` 、 `___` 来显示横线效果。
+```html
 ***
 ---
 ___
+```
+最终效果如下：  
+
+***
+
+---
+
+___
 
 
+## 标题
+```html
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+```
+效果如下：
 
-标题
-------
-
-#一级标题
-##二级标题
-###三级标题
-####四级标题
-#####五级标题
-######六级标题
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
 
 
-文本
-------
-###普通文本
-这是一段普通的文本
-###单行文本
+## 文本
 
-    Hello,大家好，我是果冻虾仁。
+### 普通文本
+这是一段普通的文本。
 
+### 单行文本
 在一行开头加入1个Tab或者4个空格。
-###文本块
-####语法1
-在连续几行的文本开头加入1个Tab或者4个空格。
-
-    欢迎到访
-    很高兴见到您
-    祝您，早上好，中午好，下午好，晚安
-
-####语法2
-使用一对各三个的反引号：
+```html
+    Hello,大家好!
 ```
-欢迎到访
-我是C++码农
-你可以在知乎、CSDN、简书搜索【果冻虾仁】找到我
+    Hello,大家好!
+
+
+### 文本块
+ - 语法1  
+	在连续几行的文本开头加入1个Tab或者4个空格。  
+
+		你好，
+		欢迎，
+		我换行了。
+
+
+ - 语法2  
+    使用反引号组包围（3个，` ``` `）：
+    ```
+        \`\`\`
+        你好，
+        欢迎，
+        我换行了。
+        \`\`\`
+    ```
+    效果：
+    ```
+    你好，
+    欢迎，
+    我换行了。
+    ```
+#### 代码高亮
+该语法也可以实现代码高亮，在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。
+```javascript
+    ```javascript
+    let func = (() => {
+        let count = 0;
+        return () => {
+            return count++;
+        }
+    })();
+    console.log(func());
+    ```
 ```
-该语法也可以实现代码高亮，见[代码高亮](#代码高亮)
-###文字高亮
-文字高亮功能能使行内部分文字高亮，使用一对反引号。
+效果：
+```javascript
+let func = (() => {
+    let count = 0;
+    return () => {
+        return count++;
+    }
+})();
+console.log(func());
+```
+
+更多示例：
+```html
+<div class="message-notice" :style="{top: top + 'px'}" v-if='show' transition="expand">
+	<div class="message-notice-content">
+		<div class="message-custom-content message-{{type}}">
+			<i class="message-icon {{iconName}}"></i>
+			<span>{{msg}}</span>
+		</div>
+	</div>
+</div>
+```
+```Java
+public static void main(String[]args){} //Java
+```
+```c
+int main(int argc, char *argv[]) //C
+```
+```Bash
+echo "hello GitHub" #Bash
+```
+```cpp
+string &operator+(const string& A,const string& B) //cpp
+```
+
+### 文字高亮
+文字高亮功能能使行内部分文字高亮，使用一对反引号（英文输入状态下，`tab` 键上面，数字键 `1` 左侧那个键）。
 语法：
 ```
-`linux` `网络编程` `socket` `epoll` 
+`linux` `网络编程` `socket` `epoll`
 ```
 效果：`linux` `网络编程` `socket` `epoll`
 
 也适合做一篇文章的tag
-####换行
+
+#### 换行
 直接回车不能换行，  
-可以在上一行文本后面补两个空格，  
+可以在上一行文本后面补 **两个空格**，  
 这样下一行的文本就换行了。
 
 或者就是在两行文本直接加一个空行。
 
 也能实现换行效果，不过这个行间距有点大。
-####斜体、粗体、删除线
+
+#### 斜体、粗体、删除线
 |语法|效果|
 |----|-----
 |`*斜体1*`|*斜体1*
@@ -118,15 +193,15 @@ ___
 
 斜体、粗体、删除线可混合使用
 
-图片
-------
+## 图片
+
 基本格式：
 ```
 ![alt](URL title)
 ```
 alt和title即对应HTML中的alt和title属性（都可省略）：
-- alt表示图片显示失败时的替换文本
-- title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
+ - alt表示图片显示失败时的替换文本。
+ - title表示鼠标悬停在图片时的显示文本（注意这里要加引号）。
 
 URL即图片的url地址，如果引用本仓库中的图片，直接使用**相对路径**就可了，如果引用其他github仓库中的图片要注意格式，即：`仓库地址/raw/分支名/图片路径`，如：
 ```
@@ -150,7 +225,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 |#|语法|效果|
 |---|----|-----
 |1|`[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")`|[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
-|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] 
+|2|`[我的知乎][zhihu] `|[我的知乎][zhihu]
 |2|`[zhihu]:https://www.zhihu.com/people/jellywong "我的知乎，欢迎关注"`|   
 
 语法2由两部分组成：
@@ -181,7 +256,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 >本文URL标识符都放置于文末
 
 ###锚点
-其实呢，每一个标题都是一个锚点，和HTML的锚点（`#`）类似，比如我们 
+其实呢，每一个标题都是一个锚点，和HTML的锚点（`#`）类似，比如我们
 
 |语法|效果|
 |---|---
@@ -259,31 +334,13 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 >>>>平衡二叉树
 >>>>>满二叉树
 
-代码高亮
-----------
-在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。
-```Java
-public static void main(String[]args){} //Java
-```
-```c
-int main(int argc, char *argv[]) //C
-```
-```Bash
-echo "hello GitHub" #Bash
-```
-```javascript
-document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
-```
-```cpp
-string &operator+(const string& A,const string& B) //cpp
-```
 表格
 --------
 
 表头1  | 表头2
 --------- | --------
-表格单元  | 表格单元 
-表格单元  | 表格单元 
+表格单元  | 表格单元
+表格单元  | 表格单元
 
 | 表头1  | 表头2|
 | ---------- | -----------|
