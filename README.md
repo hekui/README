@@ -291,7 +291,8 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 ### 有序列表
 #### 一般效果
 就是在数字后面加一个点，再加一个空格。不过看起来可能不够明显。  
-面向对象的三个基本特征：  
+面向对象的三个基本特征：
+
 1. 封装
 2. 继承
 3. 多态
@@ -302,7 +303,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 面向对象的七大原则：  
 1. 开闭原则
 * 里氏转换原则
-1. 依赖倒转原则
+* 依赖倒转原则
 * 接口隔离原则
 * 组合/聚合复用原则
 * “迪米特”法则
