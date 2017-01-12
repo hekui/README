@@ -225,9 +225,8 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 |#|语法|效果|
 |---|----|-----
 |1|`[我的博客](https://hekui.github.io/blog/ "悬停显示")`|[我的博客](https://hekui.github.io/blog/ "悬停显示")
-|2|`[知乎][zhihu]
-
-[zhihu]:https://www.zhihu.com/ "知乎，欢迎关注"`|[知乎][zhihu]
+|2|`[知乎][zhihu]`|[知乎][zhihu]
+|2|`[zhihu]:https://www.zhihu.com/ "知乎，欢迎关注"`|
 
 [zhihu]:https://www.zhihu.com/ "知乎，欢迎关注"
 
@@ -235,8 +234,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 - 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
 - 第二部分标记实际URL。
 
->使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
->>URL标识符是我起的名字，不知道是否准确。囧。。
+> 使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
 
 ### 链接本仓库里的URL
 |语法|效果|
