@@ -104,8 +104,8 @@ ___
 
 
  - 语法2  
-    使用使用一对反引号包围：
-	
+    使用一对反引号包围：
+
 		```
 		你好，
 		欢迎，
@@ -225,8 +225,11 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 |#|语法|效果|
 |---|----|-----
 |1|`[我的博客](https://hekui.github.io/blog/ "悬停显示")`|[我的博客](https://hekui.github.io/blog/ "悬停显示")
-|2|`[知乎][zhihu]  [zhihu]:https://www.zhihu.com/ "知乎，欢迎关注"`|[知乎][zhihu]
+|2|`[知乎][zhihu]
 
+[zhihu]:https://www.zhihu.com/ "知乎，欢迎关注"`|[知乎][zhihu]
+
+[zhihu]:https://www.zhihu.com/ "知乎，欢迎关注"
 
 语法2由两部分组成：
 - 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
@@ -396,4 +399,3 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 具体每一个表情的符号码，可以查询GitHub的官方网页[http://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
 
 但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
-
